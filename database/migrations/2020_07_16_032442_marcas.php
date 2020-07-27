@@ -16,7 +16,6 @@ class Marcas extends Migration
         Schema::create('marcas', function (Blueprint $table) {
             $table->bigIncrements('marca_id');
             $table->string('name');
-            $table->unsignedInteger('modelo_id');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -24,10 +24,18 @@ Route::get('showRelations','usuariosController@showRelations');
 
 Route::get('showById/{usuario_id}','usuariosController@showById');
 
-Route::post('store','usuariosController@store');
+Route::get('showMarcas','usuariosController@showMarcas');
+
+Route::get('showModelos','usuariosController@showModelos');
+
+Route::post('store','usuariosController@store'); //crear uno nuevo
+
+Route::post('newStore','usuariosController@newStore');
 
 Route::put('update/{usuario_id}','usuariosController@upDate');
 
 Route::delete('delete/{usuario_id}','usuariosController@delete');
+
+Route::delete('forceDelete/{usuario_id}','usuariosController@forceDelete');
 
 Route::patch('restore/{usuario_id}','usuariosController@restore');

@@ -27,6 +27,7 @@ class Usuarios extends Migration
             $table->string('placa');
             $table->string('comentario');
             $table->unsignedInteger('marca_id');
+            $table->unsignedInteger('modelo_id');
             $table->rememberToken();
             $table->timestamps('deleted_at')->nullable();
             $table->timestamps();
